@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+}
+body{
+    background-image: url(https://picsum.photos/id/1/5616/3744);
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 500ms;
+}
+.container{
+    min-width: 60%;
+    max-width: 65%;
+    min-height: 50%;
+    background-color: rgba(255, 255, 255, .9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.quotes-by{
+    max-width: 80%;
+    font-size: 2.3em;
+    text-align: center;
+}
+.container button{
+    
+    font-size: 1em;
+    margin: 20px 0;
+    padding: 15px;
+    border: none;
+    background-color: #2660A4;
+    color: #fff;
+    transition: all 200ms ease;
+}
+.container button:hover{
+    background-color: rgb(23, 81, 146);
+    transform: scale(1.05);
+    color: #000;
+}
+.container > .quote{
+    font-size: 1.2em;
+    padding: 10px;
+    margin: 10px auto;
+    background-color: rgba(120, 252, 197, 0.418);
+    border-left: 5px solid #000;
+    min-width: 60%;
+    max-width: 80%;
+}
+.author{
+    font-size: 1.2em;
+    color: rgb(0, 95, 95);
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 5px;
+    margin: 10px;
+}
+@media(max-width: 1000px){
+    .quotes-by{
+        font-size: 1.8em;
+    }
+    .container{
+        min-width: 70%;
+        max-width: 90%;
+        min-height: 60%;
+    }    
+}
+@media(max-width: 520px){
+    .quotes-by{
+        font-size: 1.5em;
+    }
+    .quotes-by span{
+        text-transform: lowercase;
+        font-size: 1em;
+    }
+    .container{
+            min-width: 80%;
+            max-width: 100%;
+        min-height: 60%;
+    }    
+}
